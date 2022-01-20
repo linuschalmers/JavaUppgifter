@@ -37,13 +37,50 @@ public class Ex8RPS {
         int round = 0;      // Number of rounds
         int total = 0;      // Final result after all rounds
 
-        // All code here ... (no method calls)
-
-        out.println("Welcome to Rock, Paper and Scissors");
-
         while (round < maxRounds) {  // Game loop
             // -------- Input --------------
+            out.println("Welcome to Rock, Paper and Scissors");
 
+            int datorVal = rand.nextInt(2) + 1;
+            out.println(datorVal);
+
+            int val1 = sc.nextInt();
+            switch(val1) {
+                case 1:
+                    if (datorVal==2){
+                        out.println("Dator wins!");
+                        total--;
+                    } else if(datorVal==3){
+                        out.println("You win!");
+                        total++;
+                    } else{
+                        out.println("Its a draw!");
+                    }
+                    break;
+                case 2:
+                    if (datorVal==3){
+                        out.println("Dator wins!");
+                        total--;
+                    } else if(datorVal==1){
+                        out.println("You win!");
+                        total++;
+                    } else{
+                        out.println("Its a draw!");
+                    }
+                    break;
+                case 3:
+                    if (datorVal==1){
+                        out.println("Dator wins!");
+                        total--;
+                    } else if(datorVal==2){
+                        out.println("You win!");
+                        total++;
+                    } else{
+                        out.println("Its a draw!");
+                    }
+                    break;
+
+            }
 
             // ----- Process -----------------
             // There are other ways to compare (but it shouldn't be too long)
@@ -51,7 +88,7 @@ public class Ex8RPS {
 
             // ---------- Output --------------
 
-
+            round++;
         }
 
         out.println("Game over! ");
