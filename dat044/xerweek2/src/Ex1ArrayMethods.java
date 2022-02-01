@@ -27,8 +27,8 @@ public class Ex1ArrayMethods {
         // Uncomment one at a time and implement
 
         // Count occurrences of some element in arr
-        //out.println(count(arr, 2) == 4);      // There are four 2's
-        //out.println(count(arr, 7) == 1);
+        out.println(count(arr, 2) == 4);      // There are four 2's
+        out.println(count(arr, 7) == 1);
 
         // Generate array with 100 elements with 25% distribution of -1's and 1's (remaining will be 0)
         //arr = generateDistribution(100, 0.25, 0.25);
@@ -50,6 +50,16 @@ public class Ex1ArrayMethods {
 
 
     // ---- Write methods below this ------------
+
+    int count(int[] arr, int tal){
+        int antal = 0;
+        for (int i = 0; i < arr.length; i ++) {
+            if (arr[i] == 2){
+                antal++;
+            }
+        }
+        return antal;
+    }
 
    // TODO
 }
