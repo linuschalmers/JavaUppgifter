@@ -5,6 +5,9 @@
       <root url="jar://$PROJECT_DIR$/dat044/xerweek1.zip!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../devel/javafx-sdk-17.0.1" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../devel/javafx-sdk-17.0.1" recursive="false" type="SOURCES" />
   </library>
 </component>
